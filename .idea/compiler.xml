@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="msc_api" />
+        <module name="msc_eureka_server_7001" />
+        <module name="msc_eureka_server_7002" />
+        <module name="msc_eureka_server_7003" />
+        <module name="msc_feign_consumer_news_9001" />
+        <module name="spider_provider" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="msc_eureka_provider_news_8001" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

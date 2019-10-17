@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.henu.spider.dao.NewsMapper">
+
+    <!--批量添加娱乐信息数据-->
+    <insert id="batchSaveNews">
+        INSERT INTO news (appId,title,intro,source,url,updateTime)
+        VALUES
+        <foreach collection="news" item="item" separator=",">
+            (#{item.appId},#{item.title},#{item.intro},#{item.source},#{item.url},#{item.updateTime})
+        </foreach>
+    </insert>
+</mapper>
